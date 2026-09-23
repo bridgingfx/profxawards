@@ -1,6 +1,6 @@
 <?php
 
-$SERVER_NAME = (@$_SERVER['SERVER_NAME'] != "") ? @$_SERVER['SERVER_NAME'] : "localhost";
+$SERVER_NAME = (!empty($_SERVER['SERVER_NAME'])) ? $_SERVER['SERVER_NAME'] : "localhost";
 if (!checkdnsrr($SERVER_NAME, 'NS')) {
     $permissions = [
         'storage/framework/' => '',

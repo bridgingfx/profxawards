@@ -102,6 +102,7 @@ Route::post('/{webmasterId}/categories/updateAll', [CategoriesController::class,
 
 
 Route::get('nominations', [NominationController::class,'index'])->name('nominations.index');
+Route::get('nominations/destroy/{id?}', [NominationController::class,'destroy'])->name('nominationsDestroy');
 
 // Topics
 Route::get('/{webmasterId}/topics', [TopicsController::class, 'index'])->name('topics');

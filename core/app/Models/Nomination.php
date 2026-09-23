@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Nomination extends Model
 {
     use HasFactory;
-    use HasFactory;
 
     // Table name (optional if it follows Laravel naming convention)
     protected $table = 'nominations';

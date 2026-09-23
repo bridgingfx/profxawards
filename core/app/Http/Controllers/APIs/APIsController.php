@@ -29,6 +29,10 @@ class APIsController extends Controller
 {
     public function __construct()
     {
+        // Skip in console so artisan commands (route:list, route:cache) keep working
+        if (app()->runningInConsole()) {
+            return;
+        }
         // Check API Status
         if (!Helper::GeneralWebmasterSettings("api_status")) {
             // API disabled

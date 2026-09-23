@@ -19,6 +19,10 @@ class SettingsController extends Controller
 
     public function __construct()
     {
+        // Skip permission checks in console so artisan commands (route:list, route:cache) keep working
+        if (app()->runningInConsole()) {
+            return;
+        }
         $this->middleware('auth');
 
         // Check Permissions
