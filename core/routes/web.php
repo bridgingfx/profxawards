@@ -101,6 +101,18 @@ Route::get('/forex-awards-2026', function () {
     return view('frontEnd.articleForexAwards2026');
 })->name('forexAwards2026');
 
+Route::get('/credible-awards-programme', function () {
+    return view('frontEnd.articleCredibleAwards');
+})->name('credibleAwards');
+
+Route::get('/how-award-judging-works', function () {
+    return view('frontEnd.articleAwardJudging');
+})->name('awardJudging');
+
+Route::get('/prepare-awards-submission', function () {
+    return view('frontEnd.articleStrongSubmission');
+})->name('strongSubmission');
+
 
 // Start of Frontend Routes
 // - site map
