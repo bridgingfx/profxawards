@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROFX Awards {{ Helper::awardYear() }} - Global Financial & Online Trading Awards</title>
+    <title>@yield('pageTitle', 'PROFX Awards ' . Helper::awardYear() . ' - Global Financial & Online Trading Awards')</title>
+    @yield('pageMeta')
     <link rel="icon" href="{{ asset(Helper::awardLogoAsset()) }}" type="image/png" />
 
     

@@ -97,6 +97,10 @@ Route::Group(['prefix' => config('smartend.backend_path')], function () {
 
 // Add your custom routes here
 
+Route::get('/forex-awards-2026', function () {
+    return view('frontEnd.articleForexAwards2026');
+})->name('forexAwards2026');
+
 
 // Start of Frontend Routes
 // - site map
