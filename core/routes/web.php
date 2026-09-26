@@ -113,6 +113,10 @@ Route::get('/prepare-awards-submission', function () {
     return view('frontEnd.articleStrongSubmission');
 })->name('strongSubmission');
 
+Route::get('/forex-expo-dubai-2026', function () {
+    return view('frontEnd.articleForexExpoDubai2026');
+})->name('forexExpoDubai2026');
+
 
 // Start of Frontend Routes
 // - site map
