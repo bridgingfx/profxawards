@@ -121,6 +121,10 @@ Route::get('/september-awards-wave-2026', function () {
     return view('frontEnd.articleSeptemberAwardsWave2026');
 })->name('septemberAwardsWave2026');
 
+Route::get('/challenger-awards-2026', function () {
+    return view('frontEnd.articleChallengerAwards2026');
+})->name('challengerAwards2026');
+
 
 // Start of Frontend Routes
 // - site map
